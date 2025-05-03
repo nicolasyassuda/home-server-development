@@ -25,6 +25,8 @@ data:
 ```
 Here has a very important step if you using *microk8s* you need to create a StorageClass to map the new path:
 The explanation to why you need to create this is here (https://microk8s.io/docs/addon-hostpath-storage).
+
+*psql-sc.yaml*
 ```
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
@@ -60,6 +62,7 @@ spec:
 ```
 The claim is responsable to bind the Persistent Volume to be used.
 If you create the StorageClass you need to reference here:
+
 *psql-claim.yaml*
 ```
 apiVersion: v1
