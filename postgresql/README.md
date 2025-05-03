@@ -80,6 +80,7 @@ spec:
 ```
 
 Or if you dont using StorageClass you can use this one:
+
 *psql-claim.yaml*
 ```
 piVersion: v1
